@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan1_11pplg2/login_page.dart';
 import 'package:latihan1_11pplg2/pages/calculator_page.dart';
+import 'package:latihan1_11pplg2/routes/pages.dart';
+import 'package:latihan1_11pplg2/routes/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: CalculatorPage(),
+      initialRoute: AppRoutes.calculatorPage,
+      getPages: AppPages.pages,
     );
   }
 }

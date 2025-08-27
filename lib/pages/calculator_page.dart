@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:latihan1_11pplg2/components/custom_button.dart';
 import 'package:latihan1_11pplg2/components/custom_textfield.dart';
 import 'package:latihan1_11pplg2/controllers/calculator_controller.dart';
+import 'package:latihan1_11pplg2/routes/routes.dart';
 
 class CalculatorPage extends StatelessWidget {
   CalculatorPage({super.key});
@@ -43,8 +44,9 @@ class CalculatorPage extends StatelessWidget {
           Obx((){
             return Text("Hasil "+calculatorController.textHasil.value);
           }),
-          CustomButton(myText: "Clear", myTextColor: Colors.green, onPressed: () {
-            
+          CustomButton(myText: "Main Menu", myTextColor: Colors.green, 
+          onPressed: () {
+            Get.toNamed(AppRoutes.FootballPage);
           },)
         ],
       ),
