@@ -48,7 +48,7 @@ class CalculatorPage extends StatelessWidget {
           }),
           CustomButton(myText: "Main Menu", myTextColor: Colors.green, 
           onPressed: () {
-            Get.toNamed(AppRoutes.FootballPage);
+            Get.toNamed(AppRoutes.MainMenuPage);
           },)
         ],
       ),
