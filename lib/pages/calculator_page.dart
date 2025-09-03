@@ -8,7 +8,9 @@ import 'package:latihan1_11pplg2/routes/routes.dart';
 class CalculatorPage extends StatelessWidget {
   CalculatorPage({super.key});
 
-  final CalculatorController calculatorController = Get.put(CalculatorController());
+  // final CalculatorController calculatorController = Get.put(CalculatorController());
+  // tidak lagi menggunakan get put untuk injek controller nya, sudah menggunakan binding
+  final calculatorController = Get.find<CalculatorController>();
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class CalculatorPage extends StatelessWidget {
           }),
           CustomButton(myText: "Main Menu", myTextColor: Colors.green, 
           onPressed: () {
-            Get.toNamed(AppRoutes.MainMenuPage);
+            Get.toNamed(AppRoutes.FootballPage);
           },)
         ],
       ),

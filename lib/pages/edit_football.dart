@@ -9,6 +9,15 @@ class EditFootball extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(title: Text("Edit data"),),
+      body: Center(
+        child: Column(
+          children: [
+            TextField(controller: editFootballController.nameController,)
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan1_11pplg2/controllers/football_player_controller.dart';
 
@@ -5,6 +6,7 @@ class EditFootballController extends GetxController{
 
   late int index;
   late FootballPlayerController footballPlayerController;
+  TextEditingController nameController = TextEditingController();
 
   @override
   void onInit() {
@@ -14,8 +16,10 @@ class EditFootballController extends GetxController{
     print("selected index edit "+index.toString());
     footballPlayerController = Get.find<FootballPlayerController>();
     print("selected player name "+footballPlayerController.players[index]);
+  nameController.text = footballPlayerController.players[index];
 
 
   }
+
 
 }
