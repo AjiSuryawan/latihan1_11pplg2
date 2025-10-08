@@ -5,6 +5,7 @@ class MainmenuBinding extends Bindings{
   void dependencies() {
     // TODO: implement dependencies
     // inject homecontroller, historycontroller, profilecontroller
+    // git.put
   }
 
 }
